@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals Car Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/logo-image/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+        <div class="img-nav-logo">
+            <a href="index.html">
+                <img src="images/logo-image/Xarent-Logo-Black.png" alt="Logo-Img">
+            </a>
+        </div>
+    
+        
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    
+       
+        <div class="Nav-Bar" id="nav-menu">
+           <div class="link-nav">
+            <a class="active-link" href="index.html">Home</a>
+            <a href="CarList.html">Car List</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+           </div>
+        
+    
+        <div class="Nav-button">
+            <a href=""><button class="signUpBtn">Sign Up</button></a>
+            <a href=""><button class="signInBtn">Sign In</button></a>
+        </div>
+
+        <div id="signInPopup" class="popup-overlay ">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <h2>Sign In</h2>
+              <form id="signInForm">
+                <label for="signInEmail">Email<span>*</span></label>
+                <input type="email" id="signInEmail" placeholder="Enter your email" required>
+                <label for="signInPassword">Password<span>*</span></label>
+                <input type="password" id="signInPassword" placeholder="Enter your password" required>
+                <button type="submit">Sign In</button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Sign Up Popup Structure -->
+          <div id="signUpPopup" class="popup-overlay">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <h2>Sign Up</h2>
+              <form id="signUpForm">
+                <label for="signUpName">Name <span>*</span></label>
+                <input type="text" id="signUpName" placeholder="Enter your name" required>
+                <label for="signUpEmail">Email<span>*</span></label>
+                <input type="email" id="signUpEmail" placeholder="Enter your email" required>
+                <label for="signUpPassword">Create a Password<span>*</span></label>
+                <input type="password" id="signUpPassword" placeholder="Enter your password" required>
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+    
+    
+
+<section class="bg-section wb-center">
+    <div class="bg-text">
+       <h2>Looking to save more <br> on your rentals car ?</h2>
+       <hr>
+       <p>Rent with Xarent <img src="images/logo-image/sub-icon.webp" alt=""> for Unmatched Convenience! Effortless Travel Starts Here.
+        <span>Reserved Now & Get 50% Off.</span>
+    </p>
+       <div class="bg-download-links">
+        <a href=""><img class="downloadplay  " src="images/logo-image/AppStore.jpeg" alt=""></a>
+        <a href=""><img class="downloadApp" src="images/logo-image/play.jpeg" alt=""></a>
+       </div>
+    </div>
+    <div class="bg-image">
+        <img src="images/backgroung-image/generic-suv-car-vehicle-suv-white-background_53876-241933.jpg"   alt="">
+    </div>
+</section>
+
+
+<!-- <section class="direction-section  wb-center">
+    <h5>How it works</h5>
+    <h4>Xarent following 3 working steps</h4>
+
+    <div class="directions">
+        <div >
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Choose a location</h4>
+            <p>Select your desired rental location from extensive network of car rental spots.</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-calendar-check"></i>
+            <h4>Pick-up date</h4>
+            <p>Specify the date and time you wish to pick up your car with flexible scheduling options.</p>
+        </div>
+
+        <div>
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Book your car</h4>
+            <p>Browse through our wide range of vehicles and choose the one that suits your needs.</p>
+        </div>
+    </div>
+</section>  -->
+
+<section class="discount-section ">
+    <div class="discount-display">
+        <div class="discount-dis">
+            <img src="images/logo-image/sub-icon.webp" alt="">
+            <h3>Save up to 30%</h3>
+            <h2><span>Ride</span> More <span>Save</span> More.
+            </h2>
+            <div>
+            <div class="discount"><h3 class="days-discount">1 - 2 Days</h3> <hr class="hrdiscount"> <h4 class="dicountedPrice">Standard rate</h4></div>
+            <div class="discount"><h3 class="days-discount">2 - 5 Days</h3> <hr class="hrdiscount"> <h4 class="dicountedPrice">10% Discount</h4></div>
+            <div class="discount"><h3 class="days-discount">6 - 10 Days</h3> <hr class="hrdiscount"> <h4 class="dicountedPrice">15% Discount</h4></div>
+            <div class="discount"><h3 class="days-discount">10 - 15 Days</h3> <hr class="hrdiscount"> <h4 class="dicountedPrice">20% Discount</h4></div>
+            <div class="discount"><h3 class="days-discount">Above 15 Days</h3> <hr class="hrdiscounts"> <h4 class="dicountedPrice">30% Discount</h4></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="freeCancellation">
+                <i aria-hidden="true" class="fas fa-history"></i>
+                <h3>Free cancellation
+                </h3>
+                <p>Pellente ornare sem urabitur blandit <br> tempus lacinia  quam
+                 venenatis nulla <br> metus auctor fringilla odio dui.</p>
+                </div>
+            <div class="theftprotection">
+            <i aria-hidden="true" class="fas fa-shield-virus"></i>
+            <h3>Theft Protection
+            </h3>
+            <p>Pellente ornare sem urabitur blandit <br> tempus lacinia quam
+             venenatis nulla <br> metus auctor fringilla odio dui.</p></div>
+        </div>
+
+        <div>
+            <div class="GPSonEveryVehicle">
+                <i aria-hidden="true" class="far fa-compass"></i>
+                <h3>GPS on Every Vehicle
+                </h3>
+                <p>Pellente ornare sem urabitur blandit <br> tempus lacinia  quam
+                 venenatis nulla <br> metus auctor fringilla odio dui.</p>
+                </div>
+            <div class="RefuelingPolicy">
+                <i aria-hidden="true" class="far fa-hourglass"></i>
+            <h3>Refueling Policy
+            </h3>
+            <p>Pellente ornare sem urabitur blandit <br> tempus lacinia quam
+             venenatis nulla <br> metus auctor fringilla odio dui.</p></div>
+        </div>
+       </div>
+        </div>
+        </div>
+</section>
+
+
+<section class="rentals-section wb-center">
+    <div class="rentals-deal">
+        <div class="rental-img">
+            <img  src="images/service-img/service.png" alt="">
+        </div>
+
+        <div class="rentals-desp">
+            <img class="js-scroll" src="images/logo-image/sub-icon.webp" alt="">
+            <h5>BEST SERVICES</h5>
+            <h4>Feel the best experience with our rental deals.</h4>
+        
+            <div class="rentals-display">
+                <div>
+                    <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div>
+                   <div>
+                    <h5>Deals for every budget</h5>
+                    <p>from economy cars to luxury vehicles, we have something
+                        for everyone, ensuring you get the best value for your money.
+                    </p>
+                   </div>
+        </div>
+    </div>
+
+    <div class="rentals-display">
+        <div>
+            <i class="fa-solid fa-tags"></i>
+        </div>
+        <div>
+           <div>
+            <h5>Best price quarantee</h5>
+            <p>We ensure you get competitive rates in the market, so you can Book
+                 with confidence knowing you're getting the best deal.
+            </p>
+           </div>
+</div>
+</div>
+
+<div class="rentals-display">
+    <div>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <div>
+       <div>
+        <h5>Support 24/7</h5>
+        <p> Our dedicated team is available 24/7 to assist you with any questions
+             or concerns, ensuring a smooth rental experience.
+        </p>
+       </div>
+</div>
+</div>
+</section>
+
+
+<section class="discover-section wb-center">
+    <div class="discover-display">
+        <div class="js-discover-scroll">
+            <img src="images/discoverImg/decor-image-contact-home.webp" style="vertical-align: middle;" alt="">
+        </div>
+        <div class="discover-details">
+            <div class="discover-des">
+                <img src="images/logo-image/sub-icon.webp" alt="">
+                <h2>Looking for a Luxury
+                    Car Service?</h2>
+                    <span>Starting at  <sup>  $</sup> <span class="startingPrice"> 398</span> /mo
+                    </span> <br>
+                    <a href=""><button class="js-discover-button-scroll">Discover More</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="needHelp">
+    <img src="images/logo-image/sub-icon.webp" alt="">
+    <h3>Need help renting a car? Call +1-222-333-4444
+    </h3>
+</section>
+
+<section class="book-car-section">
+       <div class="book-car-display">
+        <div class="car-booking-img js-booking1" >
+            <img src="images/BookCarImg/01.webp" alt=""> <br>
+      
+        <div class="car-booking-details">
+       <div class="ratings">
+        <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>4.5 Reviews</span>
+       </div>
+         <h4>Hyundai Accent Limited </h4>
+         <h5>$55.00 <span> / Day</span></h5>
+         <hr>
+         <div class="carsIcon">
+         <span class="carsIcon-margin"><i class="fa-solid fa-wheelchair-move "></i>6 Seats</span>
+          <br> 
+         <span class="carsIcon-margin"><i class="fa-solid fa-gear"></i>Automatic</span>
+         
+
+         </div>
+         <a href=""><button class="book-now-btn" data-car="car1">Book Now <i class="fa-solid fa-arrow-right"></i></button></a>
+      </div>
+       </div>
+
+       <div class="car-booking-img js-booking2">
+        <img src="images/BookCarImg/02.webp" alt=""> <br>
+  
+    <div class="car-booking-details">
+   <div class="ratings">
+    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>4.5 Reviews</span>
+   </div>
+     <h4>Hyundai Accent Limited </h4>
+     <h5>$55.00 <span> / Day</span></h5>
+     <hr>
+     <div class="carsIcon">
+     <span class="carsIcon-margin"><i class="fa-solid fa-wheelchair-move "></i>6 Seats</span>
+    <br> 
+     <span class="carsIcon-margin"><i class="fa-solid fa-gear"></i>Automatic</span>
+    
+     </div>
+     <a href=""><button class="book-now-btn" data-car="car2">Book Now <i class="fa-solid fa-arrow-right"></i></button></a>
+  </div>
+   </div>
+
+   <div class="car-booking-img js-booking3">
+    <img src="images/BookCarImg/03.webp" alt=""> <br>
+
+<div class="car-booking-details">
+<div class="ratings">
+<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>4.5 Reviews</span>
+</div>
+ <h4>Hyundai Accent Limited </h4>
+ <h5>$55.00 <span> / Day</span></h5>
+ <hr>
+ <div class="carsIcon">
+ <span class="carsIcon-margin"><i class="fa-solid fa-wheelchair-move "></i>6 Seats</span>
+ <br> 
+ <span class="carsIcon-margin"><i class="fa-solid fa-gear"></i>Automatic</span>
+ 
+ </div>
+ <a href=""><button class="book-now-btn" data-car="car3">Book Now <i class="fa-solid fa-arrow-right"></i></button></a>
+</div>
+</div>
+
+<div class="car-booking-img js-booking4">
+    <img src="images/BookCarImg/0.4.webp" alt=""> <br>
+
+<div class="car-booking-details">
+<div class="ratings">
+<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>4.5 Reviews</span>
+</div>
+ <h4>Hyundai Accent Limited </h4>
+ <h5>$55.00 <span> / Day</span></h5>
+ <hr>
+ <div class="carsIcon">
+ <span class="carsIcon-margin"><i class="fa-solid fa-wheelchair-move "></i>6 Seats</span>
+  <br> 
+ <span class="carsIcon-margin"><i class="fa-solid fa-gear"></i>Automatic</span>
+
+ </div>
+ <a href=""><button class="book-now-btn" data-car="car4">Book Now <i class="fa-solid fa-arrow-right"></i></button></a>
+</div>
+</div>
+
+       
+       </div>
+
+
+
+</section>
+  
+
+
+<section class="downloadApp-section">
+    <div class="downloadtext js-download-details">
+        <h3>Download the free Xarent <img src="images/logo-image/sub-icon.webp" alt=""> app</h3>
+    <p>Download the Xarent app to manage your bookings, find exclusive  deals and <br> access 24/7  support all from your mobile device.</p>
+
+    <img src="images/logo-image/AppStore.jpeg" alt="">
+    <img src="images/logo-image/play.jpeg" alt="">
+    </div>
+    <div class="downloadimg">
+        <img src="images/download-img/download.png" alt="">
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-display">
+        <div class="js-scroll-footer1">
+            <h3>Our Products</h3>
+            <a href="">Career</a> 
+            <a href="">Hotels</a> 
+            <a href="">Cars</a> 
+            <a href="">Features</a> 
+            <a href="">Package</a> 
+            <a href="">Priceline</a> 
+        </div>
+
+        <div class="js-scroll-footer2">
+            <h3>About Xarent </h3>
+            <a href="">Why Xarent</a> 
+            <a href="">Our Story</a> 
+            <a href="">Investors</a> 
+            <a href="">Advertise</a> 
+            <a href="">Press Center</a> 
+        </div>
+
+        <div class="js-scroll-footer3">
+            <h3>Resources</h3>
+            <a href="">Dowload</a> 
+            <a href="">Help Centers</a> 
+            <a href="">Guilds</a>
+            <a href="">Mechanics</a>
+            <a href="">Developer</a> 
+            <a href="">Partner Network</a>
+        </div>
+
+        <div class="js-scroll-footer4">
+            <h3>Extras</h3>
+            <a href="">Rental Deal</a> 
+            <a href="">Repairs Shop</a> 
+            <a href="">View Booking</a> 
+            <a href="">Hire Companies</a> 
+            <a href="">New Offers</a> 
+        </div>
+
+    </div>
+<hr class="footerHr">
+    <div class="footersocials">
+        <div>
+            <img src="images/logo-image/Xarent-Logo-Black.png" alt="">
+        </div>
+        <div>
+            <p>Copyright @ 2024 Web Design. All rights reserved.</p>
+        </div>
+
+        <div class="iconsF">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>

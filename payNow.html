@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals Car Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/logo-image/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+        <div class="img-nav-logo">
+            <a href="index.html">
+                <img src="images/logo-image/Xarent-Logo-Black.png" alt="Logo-Img">
+            </a>
+        </div>
+    
+        
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    
+       
+        <div class="Nav-Bar" id="nav-menu">
+           <div class="link-nav">
+            <a class="active-link" href="index.html">Home</a>
+            <a href="CarList.html">Car List</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+           </div>
+        
+    
+        <div class="Nav-button">
+            <a href=""><button class="signUpBtn">Sign Up</button></a>
+            <a href=""><button class="signInBtn">Sign In</button></a>
+        </div>
+
+        <div id="signInPopup" class="popup-overlay">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <h2>Sign In</h2>
+              <form id="signInForm">
+                <label for="signInEmail">Email<span>*</span></label>
+                <input type="email" id="signInEmail" placeholder="Enter your email" required>
+                <label for="signInPassword">Password<span>*</span></label>
+                <input type="password" id="signInPassword" placeholder="Enter your password" required>
+                <button type="submit">Sign In</button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Sign Up Popup Structure -->
+          <div id="signUpPopup" class="popup-overlay">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <h2>Sign Up</h2>
+              <form id="signUpForm">
+                <label for="signUpName">Name <span>*</span></label>
+                <input type="text" id="signUpName" placeholder="Enter your name" required>
+                <label for="signUpEmail">Email<span>*</span></label>
+                <input type="email" id="signUpEmail" placeholder="Enter your email" required>
+                <label for="signUpPassword">Create a Password<span>*</span></label>
+                <input type="password" id="signUpPassword" placeholder="Enter your password" required>
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+
+   <section class="payment-container">
+     <h2>Checkout Payment</h2>
+    <div class="paymentdesplay">
+       <div class="payment1input">
+        
+        <h4>Billing Address</h4>
+        <form >
+            <label  for="">Full Name <span>*</span></label> <br> 
+            <input type="text" placeholder="Enter Your Name" required> <br>
+
+            <label for="">Email <span>*</span></label> <br>
+            <input type="email" placeholder="Enter Your email" required> <br>
+
+            <label for="">Address <span>*</span></label> <br>
+            <input type="text" placeholder="Enter Your Address" required> <br>
+
+            <label for="">City <span>*</span></label> <br>
+            <input type="text" placeholder="Enter Your City" required> <br>
+
+            <div class="desplayInputF">
+                <div>
+                    <label for="">State <span>*</span></label> <br>
+                  <select name="" id="">
+                    <option value="">
+                        Choose State
+                  </option>
+                  <option value="">
+                    Chicago
+              </option>
+              <option value="">
+                Florida
+          </option>
+          <option value="">
+            California
+      </option>
+      <option value="">
+        Texas
+  </option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="">Zip Code <span>*</span></label> <br>
+            <input class="widthNumber" type="text" placeholder="Code" required> <br>
+                </div>
+            </div>
+        </form>
+       </div>
+
+       <div class="paymentDe">
+        <h4>Payment Details</h4>
+        <form action="">
+            <img src="images/paymentIMG/Mastercard-Simbolo.jpg" alt="">
+            <img src="images/paymentIMG/RuPay-Logo_High-Res.png" alt="">
+            <img src="images/paymentIMG/visa-card-logo-9.png" alt=""> <br> 
+            
+            <label for="">Card Number <span>*</span></label> <br>
+            <input type="text" placeholder="Enter Card Number" required> <br>
+
+            <label for="">Exp Year <span>*</span></label> <br>
+            <input type="text" placeholder="Enter Exp Year" required> <br>
+        </form>
+
+        <div  class="desplayInput">
+            <div>
+                
+                <label for="">Exp Month <span>*</span></label> <br>
+                <select name="" id="">
+                  <option value="">
+                      Choose Expired Month
+                </option>
+                <option value="">
+                  Jenuary
+            </option>
+            <option value="">
+              Febuary
+        </option>
+        <option value="">
+          Match
+    </option>
+    <option value="">
+      April
+</option>
+<option value="">
+    May
+</option>
+<option value="">
+    June
+</option>
+<option value="">
+    July
+</option>
+              </select>
+            </div>
+
+            <div>
+                <label for="">CVV <span>*</span></label> <br>
+            <input class="widthNumber" type="text" placeholder=" CVV" required> <br>
+            </div>
+        </div>
+        <button type="submit">Proceed To Pay</button>
+       </div>
+    </div>
+   </section>
+
+
+
+<section class="downloadApp-section">
+    <div class="downloadtext js-download-details">
+        <h3>Download the free Xarent <img src="images/logo-image/sub-icon.webp" alt=""> app</h3>
+    <p>Download the Xarent app to manage your bookings, find exclusive  deals and <br> access 24/7  support all from your mobile device.</p>
+
+    <img src="images/logo-image/AppStore.jpeg" alt="">
+    <img src="images/logo-image/play.jpeg" alt="">
+    </div>
+    <div class="downloadimg">
+        <img src="images/download-img/download.png" alt="">
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-display">
+        <div class="js-scroll-footer1">
+            <h3>Our Products</h3>
+            <a href="">Career</a> 
+            <a href="">Hotels</a> 
+            <a href="">Cars</a> 
+            <a href="">Features</a> 
+            <a href="">Package</a> 
+            <a href="">Priceline</a> 
+        </div>
+
+        <div class="js-scroll-footer2">
+            <h3>About Xarent </h3>
+            <a href="">Why Xarent</a> 
+            <a href="">Our Story</a> 
+            <a href="">Investors</a> 
+            <a href="">Advertise</a> 
+            <a href="">Press Center</a> 
+        </div>
+
+        <div class="js-scroll-footer3">
+            <h3>Resources</h3>
+            <a href="">Dowload</a> 
+            <a href="">Help Centers</a> 
+            <a href="">Guilds</a>
+            <a href="">Mechanics</a>
+            <a href="">Developer</a> 
+            <a href="">Partner Network</a>
+        </div>
+
+        <div class="js-scroll-footer4">
+            <h3>Extras</h3>
+            <a href="">Rental Deal</a> 
+            <a href="">Repairs Shop</a> 
+            <a href="">View Booking</a> 
+            <a href="">Hire Companies</a> 
+            <a href="">New Offers</a> 
+        </div>
+
+    </div>
+<hr class="footerHr">
+    <div class="footersocials">
+        <div>
+            <img src="images/logo-image/Xarent-Logo-Black.png" alt="">
+        </div>
+        <div>
+            <p>Copyright @ 2024 Web Design. All rights reserved.</p>
+        </div>
+
+        <div class="iconsF">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
