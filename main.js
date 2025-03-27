@@ -15,7 +15,7 @@ function changeBackground() {
   currentIndex = (currentIndex + 1) % images.length; 
 }
 
-// Automatically change background every 5 seconds (5000 milliseconds)
+
 setInterval(changeBackground, 3000);
 
 
@@ -23,7 +23,7 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav-menu');
 
 hamburger.addEventListener('click', function() {
-    nav.classList.toggle('nav-active'); // Toggle class to show/hide the menu
+    nav.classList.toggle('nav-active'); 
 });
 
 const scrollRevealSection = {
@@ -238,7 +238,7 @@ ScrollReveal().reveal(".bg-image img", {
     const calculateTotalPrice = () => {
         const numberOfDays = parseInt(daysInput.value);
         const totalPrice = dailyRate * numberOfDays;
-        totalPriceElement.textContent = totalPrice.toFixed(2); // Update the total price display
+        totalPriceElement.textContent = totalPrice.toFixed(2);
     };
 
     
@@ -434,17 +434,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        // Optional: Basic JavaScript to display a success message on form submission
         const form = document.getElementById('contact-form');
         const formMessage = document.getElementById('form-message');
 
         form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevents form from actually submitting
+            event.preventDefault(); 
 
-            // Here you could add AJAX or other form processing logic
+           
 
-            formMessage.style.display = 'block'; // Shows the success message
-            form.reset(); // Resets the form fields
+            formMessage.style.display = 'block'; 
+            form.reset();
         });
 
      
